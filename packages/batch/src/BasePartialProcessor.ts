@@ -62,6 +62,7 @@ abstract class BasePartialProcessor {
   /**
    * Call instance's handler for each record
    * @returns List of processed records
+   * TODO: Allow for both synchronous and asynchronous invocation
    */
   public async process(): Promise<(SuccessResponse | FailureResponse)[]> {
     this.prepare();
