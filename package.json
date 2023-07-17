@@ -27,7 +27,8 @@
     "docs-api-build-run": "npm run docs-generateApiDoc && npx live-server api",
     "docs-generateApiDoc": "typedoc .",
     "docs-runLocalApiDoc": "npx live-server api",
-    "postpublish": "git restore ."
+    "postpublish": "git restore .",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
